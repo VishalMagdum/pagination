@@ -547,7 +547,7 @@ function handleButtons(pages) {
         paginationContainer.innerHTML += `<button value=${i} onclick="pageButton(value)" class="page btn btn-sm btn-light">${i}</button>`
 
     }
-    if (page != data.length) {
+    if (page != data.length / rows) {
         paginationContainer.innerHTML += `<button  onclick="pageButton(${page + 1})" class="btn btn-sm btn-light">next</button>`
     }
 
